@@ -1,7 +1,8 @@
 import 'package:masterclass/models/user.model.dart';
+import 'package:masterclass/view-models/signup.viewmodel.dart';
 
 class AccountRepository {
-  Future<UserModel> create() async {
+  Future<UserModel> createAccount(SignupViewModel model) async {
     await Future.delayed(Duration(milliseconds: 1500));
     return new UserModel(
       id: "1",
